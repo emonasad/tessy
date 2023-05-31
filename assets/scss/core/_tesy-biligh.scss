@@ -1,0 +1,28 @@
+#tesy-biligh{
+	.subtitle{
+		color: var(--base-color-one) !important;
+	}
+
+	.block{
+		margin-bottom: 30px;
+		@media #{$min-xl} {
+			padding-right: 20px;
+			margin-bottom: 0px;
+		}
+		.title{
+			font-weight: 700;
+			line-height: 1.2;
+			font-family: 'Fira Sans', sans-serif;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 1.8;
+			strong{
+				font-weight: 600;
+			}
+		}
+	}
+
+}

@@ -3,7 +3,7 @@
 }
 
 .base-color-one{
-    color: var(--base-color-one);
+    color: var(--base-color-one) !important;
 }
 
 .base-color-two{
@@ -30,6 +30,10 @@ a,
     text-decoration: none;
     color: var(--text-color);
     &:hover{
+        color: var(--base-color-one);
+    }
+    &:active,
+    &:focus{
         color: var(--base-color-one);
     }
 }
@@ -111,9 +115,14 @@ a,
     font-size: 14px;
     border-radius: 100px;
     padding: 15px 40px;
+    box-shadow: none;
     &:hover{
         border-color: var(--base-color-two);
         background-color: var(--base-color-two);
+    }
+    &:active{
+        border-color: var(--base-color-two) !important;
+        background-color: var(--base-color-two) !important;
     }
     @media #{$min-md} {
         font-size: 16px;

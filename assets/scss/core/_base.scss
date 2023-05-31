@@ -4,6 +4,12 @@ body{
     line-height: 1.5;
     color: var(--text-color);
     background-color: var(--body-bg);
+    padding-top: 110px;
+    overflow: auto !important;
+    padding-right: 0 !important;
+    @media #{$min-md} {
+        padding-top: 90px;
+    }
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Fira Sans', sans-serif;
