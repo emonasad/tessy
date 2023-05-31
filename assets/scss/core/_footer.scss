@@ -1,0 +1,50 @@
+footer{
+	background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+	.title{
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	a{
+		display: block;
+		padding: 10px 0;
+		text-transform: uppercase;
+	}
+	ul{
+		margin-bottom: 25px;
+		@media #{$min-xl} {
+		    margin-bottom: 0;
+		}
+	}
+	.focus-item{
+		margin-bottom: 0;
+		li{
+			&:first-child{
+				a{
+					padding-top: 0;
+				}
+			}
+		}
+		a{
+			font-size: 20px;
+			font-weight: 600;
+			padding: 15px 0;
+		}
+	}
+
+	@media #{$max-md} {
+	    .menu-item{
+	    	margin-bottom: 0;
+    	    height: 0;
+    	    overflow-y: hidden;
+	    }
+	    .menu-active{
+	    	height: auto;
+	    	margin-bottom: 25px;
+	    	overflow-y: unset;
+	    }
+	}
+}

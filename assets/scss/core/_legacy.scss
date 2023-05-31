@@ -1,0 +1,24 @@
+#legacy{
+	&:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 33%;
+		background-color: var(--base-color-two);
+
+		@media #{$min-md} {
+		    height: 55%;
+		}
+	}
+
+	.shop-btn{
+		@media #{$min-md} {
+		    margin-top: 20px;
+		}
+		@media #{$min-xl} {
+		    margin-top: 80px;
+		}
+	}
+}

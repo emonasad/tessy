@@ -1,0 +1,19 @@
+#chose-tesy{
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 15%;
+		background-color: var(--base-color-one);
+
+		@media #{$min-md} {
+		    height: 38%;
+		}
+		@media #{$min-xl} {
+		    height: 45%;
+		}
+	}
+}
