@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TESTY</title>
+	<title>TESY</title>
 
-	<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+	<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+	<link href="./apple-touch-icon.png" rel="icon">
 
 	<!-- Load Stylesheet
 	==========================-->
@@ -25,43 +26,61 @@
 		<div class="container">
 			<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
 				<div class="col-6 col-md-2 mb-2 mb-md-0">
-					<a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+					<a href="https://tesy.bg/" class="d-inline-flex link-body-emphasis text-decoration-none">
 						<img src="assets/img/logo.png" alt="Logo" class="img-fluid">
 					</a>
 				</div>
 
 				<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-					<li><a href="" class="nav-link text-uppercase">Home</a></li>
-					<li><a href="#product-show-cas" class="scrollTo nav-link text-uppercase">Anniversary Edition</a></li>
-					<li><a href="#chose-tesy" class="scrollTo nav-link text-uppercase">Historical Milestone</a></li>
-					<li><a href="#legacy" class="scrollTo nav-link text-uppercase">Testimonial</a></li>
+					<li><a href="" class="nav-link text-uppercase">НАЧАЛО</a></li>
+					<li><a href="#product-show-cas" class="scrollTo nav-link text-uppercase">ЮБИЛЕЙНИ ПРЕДЛОЖЕНИЯ</a></li>
+					<li><a href="#tesy-biligh" class="scrollTo nav-link text-uppercase">BILIGHT  ПРЕДИМСТВА</a></li>
+					<li><a href="#chose-tesy" class="scrollTo nav-link text-uppercase">ИСТОРИЯ НА УСПЕХА</a></li>
 				</ul>
 
 				<div class="col-6 col-md-1 text-end">
-					<button type="button" class="btn p-0 me-2 offcanvas-menu base-color-one" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-						<i class="fa fa-bars" aria-hidden="true"></i>
-					</button>
+					<div class="d-flex align-items-center justify-content-end">
+						<div class="sharearea">
+							<div class="dropdown dropdown-center">
+								<button class="btn btn-secondary p-0 shareBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-share-alt" aria-hidden="true"></i>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" target="_blank" href="https://www.facebook.com/tesy.global">Facebook</a></li>
+									<li><a class="dropdown-item" target="_blank" href="https://twitter.com/TESY_Official">Twitter</a></li>
+									<li><a class="dropdown-item" target="_blank" href="https://www.linkedin.com/company/341081">Linked In</a></li>
+									<li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UCgxXqzTm-aIxARhIj7wG7TQ">YouTube</a></li>
+									<li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/tesy.official/?hl=en">Instagram</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<button type="button" class="btn p-0 me-2 offcanvas-menu base-color-one" id="main" onclick="openNav()">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+					</div>
+
+				</div>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="offcanvas-body px-0">
+						<ul class="d-lg-none">
+							<li><a href="/">НАЧАЛО</a></li>
+							<li><a href="#product-show-cas" class="scrollTo">ЮБИЛЕЙНИ ПРЕДЛОЖЕНИЯ</a></li>
+							<li><a href="#tesy-biligh" class="scrollTo">BILIGHT  ПРЕДИМСТВА</a></li>
+							<li><a href="#chose-tesy" class="scrollTo">ИСТОРИЯ НА УСПЕХА</a></li>
+						</ul>
+					  <ul>
+						  <li><a href="https://www.app.presentation.tesyar.tesy.com/water-heaters">ЕЛЕКТРИЧЕСКИ БОЙЛЕРИ</a></li>
+						  <li><a href="https://www.app.presentation.tesyar.tesy.com/convectors">Отопление и грижа за въздуха</a></li>
+					  </ul>
+					</div>
+
 				</div>
 			</header>
 		</div>
 	</section>
-	<div class="offcanvas offcanvas-menu-area offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-	  <div class="offcanvas-header d-flex justify-content-end">
-	    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-	  </div>
-	  <div class="offcanvas-body px-0">
-	  	<ul class="d-lg-none">
-	  		<li><a href="">Home</a></li>
-	  		<li><a href="/#product-show-cas" class="scrollTo">Anniversary Edition</a></li>
-	  		<li><a href="/#chose-tesy" class="scrollTo">Historical Milestone</a></li>
-	  		<li><a href="/#legacy" class="scrollTo">Testimonial</a></li>
-	  	</ul>
-	    <ul>
-	    	<li><a href="https://www.app.presentation.tesyar.tesy.com/water-heaters">Electric Water Heaters</a></li>
-	    	<li><a href="https://www.app.presentation.tesyar.tesy.com/convectors">Electric Panel Convectors</a></li>
-	    </ul>
-	  </div>
-	</div>
+
 	<!-- End Header -->
 
 	<!-- Slider -->
@@ -90,7 +109,9 @@
 		<div class="scroll position-absolute">
 			<div class="text-center">
 				<p class="text-uppercase base-color-one">Scroll</p>
-				<img src="assets/img/arrow-down.png" alt="arraow">
+				<a href="#product-show-cas">
+					<img src="assets/img/arrow-down.png" alt="arraow">
+				</a>
 			</div>
 		</div>
 	</section>
@@ -102,21 +123,20 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="top-title text-center base-color-one" style="background-image: url('assets/img/top-title-round-shap-sazzad.png')">
-						<h3>Юбилейни предложения</h3>
-						<h3>ANNIVERSARY EDITION</h3>
+						<h3>ЮБИЛЕЙНИ ПРЕДЛОЖЕНИЯ</h3>
 					</div>
 				</div>
 				<div class="col-12 col-md-6">
 					<div class="show-cass">
 						<div class="d-lg-flex">
 							<div class="info">
-								TESY BiLight 90 l at the cost of TESY BiLight 80 l*
+								TESY BiLight 90 л НА ЦЕНАТА НА TESY BiLight 80 л *
 							</div>
 							<div class="product-img">
 								<img src="assets/img/product-1.png" class="img-fluid" alt="product">
 							</div>
 						</div>
-						<div class="discount base-color-one text-uppercase">
+						<div class="discount base-color-one">
 							10% повече топла вода в сравнение с TESY Bilight 80 л.**
 						</div>
 					</div>
@@ -125,13 +145,13 @@
 					<div class="show-cass second-item">
 						<div class="d-lg-flex">
 							<div class="info order-lg-1">
-								TESY BiLight Slim 60 l at the cost of TESY BiLight Slim 50 l*
+								TESY BiLight 60 л НА ЦЕНАТА НА TESY BiLight 50 л* 
 							</div>
 							<div class="product-img order-lg-0">
 								<img src="assets/img/product-2.png" class="img-fluid" alt="product">
 							</div>
 						</div>
-						<div class="discount base-color-one text-uppercase">
+						<div class="discount base-color-one">
 							26% повече топла вода в сравнение с TESY BiLight 60 л.***
 						</div>
 					</div>
@@ -145,6 +165,22 @@
 		</div>
 	</section>
 	<!-- End -->
+	<section id="disclaimer " class="section-padding position-relative">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="disclaimer">
+						<p class="mb-2">*Според препоръчителните крайни клиентски цени на производителя „ТЕСИ“ ООД. Цените в търговския обект може да се различават от препоръчителните цени на производителя. „ТЕСИ“ ООД не носи отговорност за търговските условия, на които се предлагат продуктите на компанията в търговския обект.</p>
+
+						<p class="mb-2">** Данните се отнасят за ел. бойлер TESY BiLight 90 л. модел GCV 904430 B12 TSR в сравнение с ел. бойлер TESY BiLight 80 л. модел GCV-804430-B12-TSR</p>
+
+						<p>*** Данните се отнасят за ел. бойлер TESY BiLight Slim 60 л. модел GCV 603820 B11 TSRC в сравнение с ел. бойлер TESY BiLight Slim модел GCV 503820 B11 TSRC</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<!-- Why to buy TESY Bilight? -->
 	<section id="tesy-biligh" class="section-padding position-relative">
@@ -157,7 +193,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-xl-3">
 					<div class="block">
-						<div class="title base-color-one">
+						<div class="title base-color-one text-uppercase">
 							Икономичност 
 						</div>
 						<p>
@@ -167,7 +203,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-xl-3">
 					<div class="block">
-						<div class="title base-color-one">
+						<div class="title base-color-one text-uppercase">
 							Дълъг живот и здравина
 						</div>
 						<p>
@@ -177,7 +213,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-xl-3">
 					<div class="block">
-						<div class="title base-color-one">
+						<div class="title base-color-one text-uppercase">
 							Сигурност и безопасност
 						</div>
 						<p>
@@ -187,7 +223,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-xl-3">
 					<div class="block">
-						<div class="title base-color-one">
+						<div class="title base-color-one text-uppercase">
 							Доказано качество
 						</div>
 						<p>
@@ -206,11 +242,13 @@
 			<div class="row">
 				<div class="col-12">
 					 <div class="subtitle text-center position-relative">
+						30 ГОДИНИ TESY
+						<br>
 						ПЛАМ, ИНОВАЦИИ, ДОВЕРИЕ
 					 </div>
 				</div>
 				<div class="col-12 col-md-4">
-					<div class="box mb-0">
+					<div class="box">
 						<div class="card bg-transparent border-0">
 							<img src="assets/img/box-img-3.png" class="card-img-top" alt="box-img-2">
 							<div class="card-body">
@@ -273,9 +311,9 @@
 				<div class="col-12 col-md-6 video-content">
 					<div class="d-flex align-items-center justify-content-center h-100">
 						<div>
-							<h2>30 години TESY:</h2>
-							<h2>ТОПЛИНА ОТ БЪЛГАРИЯ,</h2>
-							<h2>СЪЗДАДЕНА ЗА СВЕТА</h2>
+							<h2 class="text-uppercase">30 години TESY:</h2>
+							<h2 class="text-uppercase">ТОПЛИНА ОТ БЪЛГАРИЯ,</h2>
+							<h2 class="text-uppercase">СЪЗДАДЕНА ЗА СВЕТА</h2>
 						</div>
 					</div>
 				</div>
@@ -291,7 +329,7 @@
 				<div class="col-12 col-lg-9">
 					<div class="subtitle text-center position-relative">
 						30 години история на успеха
-						<p class="text-capitalize">От скромен цех през 1993 година до незаобиколим фактор днес в европейското производство на електрически бойлери, бойлери с индиректно нагряване и отоплителни уреди за дома, TESY оставя своята ярка следа със своите постижения благодарение на непрекъснатия стремеж към по-високи стандарти, иновации и отдаденост на мисията да внасяме топлина във всеки дом. Вижте част от нашите значими постижения през годините.</p>
+						<p class="text-capitalize">От скромен цех през 1993 година до незаобиколим фактор днес в европейското производство на електрически бойлери, бойлери с индиректно нагряване и отоплителни уреди за дома, TESY оставя своята ярка следа със своите постижения, благодарение на непрекъснатия стремеж към по-високи стандарти, иновации и отдаденост на мисията да внасяме топлина във всеки дом. Вижте част от нашите значими постижения през годините.</p>
 					</div>
 				</div>
 			</div>
@@ -313,7 +351,7 @@
 						<div class="card bg-transparent border-0">
 							<img src="assets/img/legacy-box-img-2.jpg" class="card-img-top" alt="legacy-box-img-2">
 							<div class="card-body">
-								<p class="card-text base-color-one text-uppercase">2019 : Произвежда Bellislimo - първият плосък ел. Бойлер с двоен водосъдържател</p>
+								<p class="card-text base-color-one text-uppercase">2021: TESY създава 4-то поколение Piston струйник - количеството топла вода от хоризонталните бойлери на TESY вече е съпоставимо с това на вертикалните</p>
 							</div>
 						</div>
 					</div>
@@ -330,7 +368,7 @@
 				</div>
 				<div class="col-12">
 					<div class="shop-btn text-center">
-						<div class="subtitle text-center position-relative base-color-one"> Стани част от историята на Теси</div>
+						<div class="subtitle text-center position-relative base-color-one">СТАНИ ЧАСТ ОТ ИСТОРИЯТА НА ТЕСИ to ТЪРСИ ЮБИЛЕЙНИТЕ ПРЕДЛОЖЕНИЯ В ПАРТНЬОРСКАТА НИ МРЕЖА</div>
 						<a href="https://tesy.com/distributors" class="btn btn-primary text-uppercase">Открий TESY партньор</a>
 					</div>
 				</div>
@@ -345,50 +383,57 @@
 			<div class="row position-relative z-3">
 				<div class="col-12 col-md-4 col-xl">
 					<div class="title base-color-one text-uppercase" data-item="item-one">
-						PRODUCTS
+						ПРОДУКТИ
 					</div>
 					<ul class="menu-item" id="item-one">
-						<li><a href="https://tesy.com/distributors" class="text-uppercase">ELECTRIC WATER HEATERS</a></li>
-						<li><a href="https://tesy.com/products/heat-pump-water-heaters" class="text-uppercase">HEAT PUMP WATER HEATERS</a></li>
-						<li><a href="https://tesy.com/products/combined-and-indirectly-heated-water-tanks" class="text-uppercase">COMBINED AND INDIRECTLY HEATED WATER TANKS</a></li>
-						<li><a href="https://tesy.com/products/heating-appliances" class="text-uppercase">HEATING APPLIANCES</a></li>
+						<li><a href="https://tesy.bg/produkti/elektricheski-bojleri">Електрически бойлери</a></li>
+						<li><a href="https://tesy.bg/produkti/termodinamichni-bojleri">Термодинамични бойлери</a></li>
+						<li><a href="https://tesy.bg/produkti/bojleri-s-indirektno-zagrjavane">Бойлери с индиректно загряване</a></li>
+						<li><a href="https://tesy.bg/produkti/otoplenie-i-grija-za-vyzduha">Отопление и Грижа за въздуха </a></li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-4 col-xl">
 					<div class="title base-color-one text-uppercase" data-item="item-two">
-						ABOUT US
+						ЗА НАС
 					</div>
 					<ul class="menu-item" id="item-two">
-						<li><a href="https://tesy.com/about-us/history" class="text-uppercase">HISTORY</a></li>
-						<li><a href="https://tesy.com/en/about-us/mission-vision-and-values" class="text-uppercase">MISSION, VISION AND VALUES</a></li>
-						<li><a href="https://tesy.com/en/about-us/factories" class="text-uppercase">FACTORIES</a></li>
-						<li><a href="https://tesy.com/en/about-us/factories" class="text-uppercase">INNOVATIONS</a></li>
-						<li><a href="https://tesy.com/en/about-us/tesy-in-numbers" class="text-uppercase">TESY IN NUMBERS</a></li>
+						<li><a href="https://tesy.bg/za-nas/istorija" title="История" class="">История</a></li>
+						<li><a href="https://tesy.bg/bg/za-nas/misija-vizija-i-cennosti" title="Мисия, Визия и Ценности " class="">Мисия, Визия и Ценности </a></li>
+						<li><a href="https://tesy.bg/bg/za-nas/zavodi" title="Заводи" class="">Заводи</a></li>
+						<li><a href="https://tesy.bg/bg/za-nas/inovacii" title="Иновации" class="">Иновации</a></li>
+						<li><a href="https://tesy.bg/bg/za-nas/tesy-v-cifri" title="Tesy в цифри" class="">Tesy в цифри</a></li>
+						<li><a href="https://tesy.bg/bg/za-nas/izsledovatelski-i-obuchitelen-centyr" title="Изследователски и обучителен център" class="">Изследователски и обучителен център</a></li>
+						<li><a href="https://tesy.bg/bg/za-nas/objavlenija" title="Обявления" class="">Обявления</a></li>
+						<li><a href="https://tesy.bg/bg/za-nas/sertifikati-nagradi-i-chlenstva" title="Сертификати, награди и членства" class="">Сертификати, награди и членства</a></li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-4 col-xl">
 					<div class="title base-color-one text-uppercase" data-item="item-three">
-						CONTACT US
+						КОНТАКТИ
 					</div>
 					<ul class="menu-item" id="item-three">
-						<li><a href="https://tesy.com/service-network" class="text-uppercase">SERVICE NETWORK</a></li>
-						<li><a href="https://tesy.com/en/contact-us/offices" class="text-uppercase">OFFICES</a></li>
-						<li><a href="javascript:void(0)" class="text-uppercase">CUSTOMER FEEDBACK</a></li>
-						<li><a href="https://tesy.com/en/contact-us/partners-login" class="text-uppercase">PARTNERS LOGIN</a></li>
+						<li></li><a href="/obslujvane-na-klienti/servizna-mreja" title="Сервизна мрежа" class="">Сервизна мрежа</a></li>
+						<li></li><a href="https://tesy.bg/bg/kontakti/ofisi" title="Офиси" class="">Офиси</a></li>
+						<li></li><a href="https://tesy.bg/kontakti/obratna-vryzka" title="Обратна връзка" class="">Обратна връзка</a></li>
+						<li></li><a href="https://tesy.bg/bg/obslujvane-na-klienti/punktove-za-reciklirane" title="Пунктове за рециклиране" class="">Пунктове за рециклиране</a></li>
+						<li></li><a href="https://tesy.bg/bg/kontakti/vhod-za-partniori" title="Вход за партньори" class="">Вход за партньори</a></li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-4 col-xl">
 					<ul class="focus-item">
-						<li><a href="https://tesy.com/distributors" class="text-uppercase base-color-one">DISTRIBUTORS</a></li>
-						<li><a href="https://tesy.com/en/careers" class="text-uppercase base-color-one">CAREERS</a></li>
-						<li><a href="https://tesy.com/news" class="text-uppercase base-color-one">NEWS</a></li>
-						<li><a href="https://tesy.com/news" class="text-uppercase base-color-one">BLOG</a></li>
+						<li><a href="https://tesy.bg/bg/tyrgovska-mreja" class="text-uppercase base-color-one">ТЪРГОВСКА МРЕЖА</a></li>
+						<li><a href="https://tesy.bg/bg/tyrgovska-mreja" class="text-uppercase base-color-one">КАРИЕРИ</a></li>
+						<li><a href="https://tesy.bg/bg/novini" class="text-uppercase base-color-one">НОВИНИ</a></li>
+						<li><a href="https://tesy.bg/blog/" class="text-uppercase base-color-one">БЛОГ</a></li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-4 col-xl">
 					<ul class="focus-item mb-0">
-						<li><a href="https://tesy.com/news" class="text-uppercase base-color-one">ARCHIVE</a></li>
-						<li><a href="https://tesy.com/en/privacy-policy" class="text-uppercase base-color-one">PRIVACY POLICY</a></li>
+						<li><a href="https://tesy.bg/bg/politika-za-internet-sajta" class="text-uppercase base-color-one">ПОЛИТИКА ЗА ИНТЕРНЕТ САЙТА</a></li>
+						<li><a href="https://tesy.bg/bg/obslujvane-na-klienti/politika-za-zashtita-na-lichni-danni" class="text-uppercase base-color-one">ПОЛИТИКА ЗА ЗАЩИТА НА ЛИЧНИ ДАННИ</a></li>
+						<li><a href="https://tesy.bg/chesto-zadavani-vyprosi" class="text-uppercase base-color-one">ЧЕСТО ЗАДАВАНИ ВЪПРОСИ</a></li>
+						<li><a href="https://tesy.bg/bg/arhiv" class="text-uppercase base-color-one">АРХИВ С ПРОДУКТИ</a></li>
+
 					</ul>
 				</div>
 			</div>
@@ -399,10 +444,31 @@
 	<!-- Copy Right -->
 	<section class="copyright">
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6 order-1 order-md-0">
 					<div class="content base-color-one">
-						&copy; Copyright 2010-2023 TESY
+						&copy; Copyright 2023 TESY
+					</div>
+				</div>
+				<div class="col-md-6 order-0 order-md-1">
+					<div class="social-media-area">
+						<ul class="social-media">
+							<li><a target="_blank" href="https://www.facebook.com/tesy.global">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a></li>
+							<li><a target="_blank" href="https://twitter.com/TESY_Official">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a></li>
+							<li><a target="_blank" href="https://www.linkedin.com/company/341081">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a></li>
+							<li><a target="_blank" href="https://www.youtube.com/channel/UCgxXqzTm-aIxARhIj7wG7TQ">
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							</a></li>
+							<li><a target="_blank" href="https://www.instagram.com/tesy.official/?hl=en">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
