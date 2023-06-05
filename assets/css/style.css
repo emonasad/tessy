@@ -6,11 +6,6 @@
 /*  Responsive breakpoints
 /*=========================*/
 /* 
- * Embed Google Font
- * Open Sans
-*/
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&family=Open+Sans:wght@400;600;800&display=swap");
-/* 
  * Bootstrap  v5.3.0-alpha3 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -27,6 +22,7 @@
  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
  */
 @import url("../css/owl.carousel.min.css");
+@import url("../css/fonts.css");
 :root {
   --white-color: #fff;
   --black-color: #000;
@@ -39,7 +35,7 @@
   --text-medium: 16px;
   --text-large: 26px;
   --text-large-x: 32px;
-  --font-family: "Open Sans", sans-serif;
+  --font-family: "DINProThin", Arial, sans-serif;
   --transition: 0.3s;
 }
 
@@ -60,7 +56,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "DINProMedium", Arial, serif;
   line-height: 1.2;
 }
 
@@ -139,7 +135,7 @@ a:active, a:focus,
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "DINPro", Arial, serif;
   font-weight: 700;
   padding: 0 0 25px;
 }
@@ -152,7 +148,7 @@ a:active, a:focus,
 .subtitle p {
   font-weight: 400;
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 15px;
 }
 
@@ -203,14 +199,9 @@ a:active, a:focus,
   }
 }
 .box .card-text {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.7;
   margin-top: 15px;
-}
-@media (min-width: 992px) {
-  .box .card-text {
-    font-size: 16px;
-  }
 }
 
 .divider {
@@ -242,7 +233,7 @@ a:active, a:focus,
 }
 @media (min-width: 768px) {
   .btn-primary {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (min-width: 992px) {
@@ -307,12 +298,15 @@ a:active, a:focus,
 
 @media (min-width: 1200px) and (max-width: 1500.98px) {
   #slider .content h1 {
-    font-size: 58px !important;
+    font-size: 48px !important;
   }
 }
 #disclaimer\  {
   background: #d4efc4;
   padding: 20px 0;
+}
+#disclaimer\  .disclaimer p {
+  font-size: 14px;
 }
 
 #header {
@@ -455,7 +449,7 @@ a:active, a:focus,
 }
 @media (min-width: 1200px) {
   #slider .content h2 {
-    font-size: 58px;
+    font-size: 48px;
   }
 }
 #slider .content h1 {
@@ -467,7 +461,7 @@ a:active, a:focus,
 }
 @media (min-width: 1200px) {
   #slider .content h1 {
-    font-size: 68px;
+    font-size: 48px;
     max-width: unset;
   }
 }
@@ -483,7 +477,7 @@ a:active, a:focus,
 }
 @media (min-width: 1200px) {
   #slider .content p {
-    font-size: 16px;
+    font-size: 18px;
     max-width: unset;
   }
   #slider .content p span {
@@ -660,12 +654,11 @@ a:active, a:focus,
 #tesy-biligh .block .title {
   font-weight: 700;
   line-height: 1.2;
-  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
 }
 #tesy-biligh .block p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
 }
 #tesy-biligh .block p strong {
@@ -780,7 +773,7 @@ footer {
   background-repeat: no-repeat;
 }
 footer .title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -804,8 +797,9 @@ footer .focus-item li:first-child a {
   padding-top: 0;
 }
 footer .focus-item a {
-  font-size: 16px;
+  font-size: 18px;
   padding: 15px 0;
+  font-family: "DINProMedium", Arial, serif;
 }
 @media (max-width: 767.98px) {
   footer .menu-item {
