@@ -425,6 +425,12 @@ a:active, a:focus,
   transition: var(--transition);
 }
 
+#main img {
+  max-width: 25px;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
 #slider {
   background-color: var(--body-bg);
   background-repeat: no-repeat;
