@@ -353,6 +353,12 @@ a:active, a:focus,
   font-size: 32px;
   margin-right: 15px;
 }
+#header .sharearea .shareBtn img {
+  max-width: 23px;
+  width: 100%;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
 #header .sharearea .dropdown-menu {
   background-color: #ecf5e8;
   border: 0;
