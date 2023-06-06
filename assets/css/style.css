@@ -309,6 +309,10 @@ a:active, a:focus,
   font-size: 14px;
 }
 
+.text-normal {
+  text-transform: initial;
+}
+
 #header {
   background-color: var(--header-bg);
   position: fixed;
