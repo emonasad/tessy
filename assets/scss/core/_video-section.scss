@@ -14,9 +14,16 @@
 	.video-content,
 	.video-area{
 		position: relative;
+		iframe{
+			width: 100%;
+			min-height: 320px;
+			transform: translateY(3px);
+		}
+	}
+	.video_bg{
+		background-color: var(--base-color-two);
 	}
 	.video-content{
-		background-color: var(--base-color-two);
 		color: var(--white-color);
 		text-align: center;
 		padding: 25px 0 0;

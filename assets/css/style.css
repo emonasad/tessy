@@ -722,8 +722,17 @@ a:active, a:focus,
 #video-section .video-area {
   position: relative;
 }
-#video-section .video-content {
+#video-section .video-content iframe,
+#video-section .video-area iframe {
+  width: 100%;
+  min-height: 320px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+#video-section .video_bg {
   background-color: var(--base-color-two);
+}
+#video-section .video-content {
   color: var(--white-color);
   text-align: center;
   padding: 25px 0 0;
